@@ -126,11 +126,20 @@ a {
     margin-bottom: 10;
   }
 
+  .name {
+    margin-top: 0;
+  }
+
   .verified {
     width: 20px;
     height: 20px;
     margin-bottom: 20px;
     margin-left: 5px;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   * {
