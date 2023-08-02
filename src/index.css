@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #21242a;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2,
+p {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  text-transform: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 660px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #2c2f36;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.container .card:hover {
+  transform: scale(1.1);
+}
+
+.container .card .logoBx {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+
+  object-fit: cover;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* make verified image right next to h2 */
+.verified {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 44px;
+  margin-left: 5px;
+}
+
+/* Responsive design   */
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 10;
+  }
+
+  .verified {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+
+  * {
+    margin-top: 30px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .card {
+    width: 90%;
+  }
+}
