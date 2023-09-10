@@ -127,7 +127,7 @@ a {
   }
 
   .name {
-    margin-top: 0;
+    margin: 0;
   }
 
   .verified {
@@ -165,4 +165,15 @@ a {
   .container .card {
     width: 90%;
   }
+}
+
+.love,
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love {
+  margin-top: 20px;
 }

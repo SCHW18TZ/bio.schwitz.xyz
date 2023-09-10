@@ -9,9 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://schwitz.xyz" target="_blank">
-          <img src={harsh} className="logo" alt="schwitz logo" />
-        </a>
+        <img src={harsh} className="logo" alt="schwitz logo" />
       </div>
       <div className="home">
         <div className="container">
@@ -25,13 +23,38 @@ function App() {
           <a className="card" target="_blank" href="https://schwitz.xyz">
             Portfolio
           </a>
-          <a className="card" target="_blank" href="https://schwitz.xyz">
-            Portfolio
+          <a
+            className="card"
+            target="_blank"
+            href="https://instagram.com/harshbhardwaj_6969"
+          >
+            Instagram
           </a>
-          <a className="card" target="_blank" href="https://schwitz.xyz">
-            Portfolio
+          <a
+            className="card"
+            target="_blank"
+            href="https://github.com/SCHW18TZ"
+          >
+            Github
           </a>
         </div>
+        <footer>
+          <div className="love">
+            <p>
+              Made with ❤️ by{" "}
+              <a
+                target="_blank"
+                href="https://instagram.com/harshbhardwaj_6969"
+              >
+                Harsh Bhardwaj
+              </a>
+            </p>
+          </div>
+          {/* copyright */}
+          <div className="copyright">
+            <p> &copy; harsh 2023 </p>
+          </div>
+        </footer>
       </div>
     </>
   );
